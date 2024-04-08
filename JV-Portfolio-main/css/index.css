@@ -1,0 +1,870 @@
+@import url('https://fonts.cdnfonts.com/css/super-onigiri');
+@import url('https://fonts.cdnfonts.com/css/amaranth?styles=14644');
+@import url('https://fonts.cdnfonts.com/css/montserrat?styles=17391');
+@import url('https://fonts.cdnfonts.com/css/manrope?styles=21013');
+@import url('https://fonts.cdnfonts.com/css/spongition?styles=168682');
+
+
+
+
+.container_first{
+
+  display: flex;
+  background-color: rgb(17,17,17);
+  align-content: center;
+  flex-direction: column;
+}
+.descript{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 35px;
+}
+
+.descript h1 {
+  font-family: 'Amaranth', sans-serif;
+  font-size: 56px;
+}
+
+
+
+.p{
+  font-family: sans-serif;
+}
+
+.corp1{
+  display: flex;
+  flex-direction: column;
+  padding-top: 90px;
+  
+  
+  
+}
+.its_me{
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  flex-wrap: wrap-reverse;
+  
+
+}
+.about_us{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ 
+}
+
+.about_us p{
+  padding-left: 200px;
+  padding-right: 200px;
+  align-content: center;
+  font-size: large;
+}
+
+
+
+
+.titre_part{
+  display: flex;
+  align-items: center;
+  
+  font-family: 'Spongition', sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: sans-serif;
+  
+
+}
+
+.descrip-1{
+  display: flex;
+flex-direction: column;
+}
+
+.about_img{
+  text-align: center;
+}
+
+.head .nav ul {
+  display: flex;
+  padding-right: 120px;
+  
+}
+.Titre{
+  padding-left: 12%;
+  margin : 20px;
+  color: #3ecd5e;
+}
+.logo{
+ color: white;
+}
+
+.head .nav ul li {
+  margin: 0 20px;
+  font-weight: bold;
+  
+}
+
+.head{
+  position: absolute;
+  z-index: 999;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.head .menu-hamburger{
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+}
+/*card veille*/
+.cardxd {
+  max-width: 600px;
+  margin: 20px ;
+  padding: 20px;
+  background-color: #333;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 24px;
+  color: white;
+  margin-top: 20px;
+}
+
+p {
+  font-size: 16px;
+  margin-top: 10px;
+  color: white;
+}
+
+
+
+.container-veille{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  flex-wrap: wrap;
+}
+/*fin card veille*/
+
+
+
+@media screen and  (max-width: 1150px){
+
+  .head{
+    padding: 0;
+  }
+  .head .menu-hamburger{
+    display: block;
+  }
+  .nav{
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(238, 246, 247, 0.137);
+    backdrop-filter: blur(7px);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    padding-left: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-left: -120%;
+    transition: all 0.5s ease;
+  }
+
+  .nav.mobile-menu{
+    margin-left: 0;
+  }
+
+  .nav ul{
+    position: absolute;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+  }
+
+  .head .nav ul li {
+    margin: 25px 0;
+    font-size: 1.2em;
+    
+    
+  }
+}
+  
+
+
+/*cadre img*/
+
+
+
+.wrapper {
+  padding-top: 100px;
+  
+  width: 300px;
+  height: 200px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #e9c794 0%, #a6eed7 30%, #6a4bc9 70%, #e9c794 100%);
+  background-size: 200% auto;
+  animation: animated-border 5s linear infinite;
+  box-shadow:
+  0px 2.8px 2.2px rgba(0, 0, 0, 0.038),
+  0px 6.7px 5.3px rgba(0, 0, 0, 0.055),
+  0px 12.5px 10px rgba(0, 0, 0, 0.065),
+  0px 22.3px 17.9px rgba(0, 0, 0, 0.07),
+  0px 41.8px 33.4px rgba(0, 0, 0, 0.072),
+  0px 100px 80px rgba(0, 0, 0, 0.07)
+;
+}
+
+.card12 {
+  position: absolute;
+  top: 1%;
+  left: 0;
+  right: 0;
+  height: 98%;
+  width: 98%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  align-self: center;
+  background: #fff;
+  z-index: 2;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.card12 img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes animated-border {
+  from {
+    background-position: 200% right;
+  }
+  to {
+    background-position: 200% center;
+  }
+}
+
+@keyframes shimmer {
+  to {
+    background-position: 200% bottom;
+  }
+}
+
+/*Fin cadre img*/
+
+.corp1{
+  color: white;
+}
+
+
+
+p{
+  text-align: justify;
+  
+}
+
+a{
+  text-decoration: none;
+  color: white;
+
+}
+
+.nav ul li a:hover{
+
+  color: #3ecd5e;
+}
+/* nav*/
+.nav ul li {
+    color: white;
+}
+
+
+
+
+
+
+/*technologies cards */
+
+.container-tech {
+display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+
+}
+.container {
+  position: relative;
+  max-width: 800px;
+  width: 100%;
+  background: #282828;
+  margin: 15px 15px;
+  padding: 10px 20px;
+  border-radius: 7px;
+}
+
+.container .skill-box {
+  width: 100%;
+  margin: 25px 0;
+}
+
+.skill-box .title {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(226, 226, 226);
+}
+
+.skill-box .skill-bar {
+  height: 8px;
+  width: 100%;
+  border-radius: 6px;
+  margin-top: 6px;
+  background: rgba(236, 236, 236, 0.1);
+}
+
+.skill-bar .skill-per {
+  position: relative;
+  display: block;
+  height: 100%;
+  width: 90%;
+  border-radius: 6px;
+  background: rgb(226, 226, 226);
+  animation: progress 0.4s ease-in-out forwards;
+  opacity: 0;
+}
+
+.skill-per.html {
+  width: 75%;
+  animation-delay: 0.1s;
+}
+
+.skill-per.css {
+  width: 50%;
+  animation-delay: 0.1s;
+}
+
+.skill-per.js {
+  width: 45%;
+  animation-delay: 0.2s;
+}
+.skill-per.c {
+  width: 60%;
+  animation-delay: 0.2s;
+}
+.skill-per.java {
+  width: 50%;
+  animation-delay: 0.2s;
+}
+.skill-per.php {
+  width: 75%;
+  animation-delay: 0.2s;
+}
+.skill-per.sql {
+  width: 80%;
+  animation-delay: 0.2s;
+}
+
+
+@keyframes progress {
+  0% {
+    width: 0;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.skill-per .tooltip {
+  position: absolute;
+  right: -14px;
+  top: -28px;
+  font-size: 9px;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 3px;
+  background: rgb(226, 226, 226);
+  z-index: 1;
+}
+
+.tooltip::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  height: 10px;
+  width: 10px;
+  z-index: -1;
+  background-color: rgb(226, 226, 226);
+  transform: translateX(-50%) rotate(45deg);
+}
+
+
+/* Fin technologies cards*/
+
+
+  /* Project*/
+  .container-project {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    }
+    .container1 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 350px;
+      padding: 20px;
+      background:  rgb(17,17,17);
+      border-radius: 10px;
+      margin: 20px;
+    }
+    
+    .card {
+      position: relative;
+      background: #333;
+      width: 350px;
+      height: 350px;
+      border-radius: 10px;
+      padding: 2rem;
+      color: #aaa;
+      box-shadow: 0 .25rem .25rem rgba(0,0,0,0.2),
+        0 0 1rem rgba(0,0,0,0.2);
+      overflow: hidden;
+    }
+    
+    .card__image-container {
+      margin: -2rem -2rem 1rem -2rem;
+    }
+    
+    .card__line {
+      opacity: 0;
+      animation: LineFadeIn .8s .8s forwards ease-in;
+    }
+    
+    .card__image {
+      opacity: 0;
+      animation: ImageFadeIn .8s 1.4s forwards;
+    }
+    
+    .card__title {
+      color: white;
+      margin-top: 35px;
+      margin-bottom: 10px;
+      font-weight: 800;
+      letter-spacing: 0.01em;
+    }
+    
+    .card__content {
+      margin-top: -1rem;
+      opacity: 0;
+      animation: ContentFadeIn .8s 1.6s forwards;
+    }
+    
+    .card__svg {
+      position: absolute;
+      left: 0;
+      top: 115px;
+    }
+    
+    @keyframes LineFadeIn {
+      0% {
+        opacity: 0;
+        d: path("M 0 300 Q 0 300 0 300 Q 0 300 0 300 C 0 300 0 300 0 300 Q 0 300 0 300 ");
+        stroke: #fff;
+      }
+    
+      50% {
+        opacity: 1;
+        d: path("M 0 300 Q 50 300 100 300 Q 250 300 350 300 C 350 300 500 300 650 300 Q 750 300 800 300");
+        stroke: #888BFF;
+      }
+    
+      100% {
+        opacity: 1;
+        d: path("M -2 100 Q 50 200 100 250 Q 250 400 350 300 C 400 250 550 150 650 300 Q 750 450 802 400");
+        stroke: #545581;
+      }
+    }
+    
+    @keyframes ContentFadeIn {
+      0% {
+        transform: translateY(-1rem);
+        opacity: 0;
+        
+      }
+    
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    
+    @keyframes ImageFadeIn {
+      0% {
+        transform: translate(-.5rem, -.5rem) scale(1.05);
+        opacity: 0;
+        filter: blur(2px);
+      }
+    
+      50% {
+        opacity: 1;
+        filter: blur(2px);
+      }
+    
+      100% {
+        transform: translateY(0) scale(1.0);
+        opacity: 1;
+        filter: blur(0);
+      }
+    }
+
+    /* Button Project*/
+
+    .button {
+      color: #ecf0f1;
+      font-size: 17px;
+      background-color: #278f12;
+      border: 1px solid #0d7916;
+      border-radius: 5px;
+      padding: 10px;
+      box-shadow: 0px 6px 0px #054713;
+      transition: all .1s;
+     }
+     
+     .button:active {
+      box-shadow: 0px 2px 0px #06a31b;
+      position: relative;
+      top: 2px;
+     }
+
+    /*Fin Button Project*/
+  /* Fin Project*/
+
+  /*Parcours*/
+  
+
+  .timeline {
+    position: relative;
+    margin: 20px auto;
+    width: 80%;
+  }
+
+  .timeline::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: white;
+  }
+
+  .timeline-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .timeline-item::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    transform: translateX(-50%);
+  }
+
+  .timeline-content {
+    position: relative;
+    width: 45%;
+    padding: 10px;
+    background-color: #333;
+    border-radius: 5px;
+  }
+
+
+  .timeline-content-right {
+    margin-left: auto;
+  }
+
+  .timeline-content-right::after {
+    right: 100%;
+    border-color: transparent transparent transparent #f9f6f6;
+  }
+
+  .timeline-title {
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+  }
+
+  .timeline-date {
+  
+    font-size: 14px;
+    color: white;
+  }
+
+  .timeline-note {
+    font-size: 12px;
+    color: #999999;
+  }
+
+  .timeline-icon {
+    margin-left: 5px;
+    color: white;
+  }
+  /*Fin parcours*/
+
+  /*Bts sio*/
+.what-Bts{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+  .card-bts {
+    position: relative;
+    background: #333;
+    width:600px;
+    margin: 2px;
+    margin: 20px;
+    height: 350px;
+    border-radius: 10px;
+    padding: 2rem;
+    color: #aaa;
+    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+
+  
+
+  /*Fin Bts sio*/
+
+  /*Responsive portfolio*/
+
+/* Media query pour les écrans plus petits */
+@media only screen and (max-width: 700px) {
+  .about_us p {
+    font-size: 16px;
+    padding-left: 50px;
+    padding-right: 50px; /* ajustement de la taille de police pour les petits écrans */
+  }
+  .school-pro{
+    
+    margin-top: 800px;
+  }
+
+  
+  .card-bts {
+    position: relative;
+    background: #333;
+    width:auto;
+    height: auto;
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 10px;
+    
+    
+    color: #aaa;
+    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+  .container1 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    justify-content: center;
+    height: 350px;
+    width: 350px;
+    padding: 20px;
+    background:  rgb(17,17,17);
+    border-radius: 10px;
+    margin: 20px;
+  }
+
+
+
+  
+}
+
+
+/* Fin Responsive Portfolio*/
+  
+/*footer*/
+.container-footer{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 200px;
+  width: 100%;
+  background-color: rgba(12, 11, 11, 0.822);
+  
+  
+}
+
+.carddf {
+  display: flex;
+  height: 70px;
+  width: 350px;
+  padding: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+}
+
+.carddf svg {
+  position: absolute;
+  display: flex;
+  width: 60%;
+  height: 100%;
+  font-size: 24px;
+  font-weight: 700;
+  opacity: 1;
+  transition: opacity 0.25s;
+  z-index: 2;
+  padding: 0.25rem;
+  cursor: pointer;
+}
+
+.carddf .social-link1,
+.carddf .social-link2,
+.carddf .social-link3,
+.carddf .social-link4,
+.carddf .social-link5 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  color: whitesmoke;
+  font-size: 24px;
+  text-decoration: none;
+  transition: 0.25s;
+  border-radius: 50px;
+}
+
+.carddf svg {
+  transform: scale(1);
+}
+
+.carddf .social-link1:hover {
+  background: #f09433;
+  background: -moz-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  animation: bounce_613 0.4s linear;
+}
+
+.carddf .social-link2:hover {
+  background-color: #242c34;
+  animation: bounce_613 0.4s linear;
+}
+
+.carddf .social-link3:hover {
+  background-color: #5865f2;
+  animation: bounce_613 0.4s linear;
+}
+
+.carddf .social-link4:hover {
+  background-color: #0a66c2;
+  animation: bounce_613 0.4s linear;
+}
+
+.carddf .social-link5:hover {
+  background-color: #ff8000;
+  animation: bounce_613 0.4s linear;
+}
+
+@keyframes bounce_613 {
+  40% {
+    transform: scale(1.4);
+  }
+
+  60% {
+    transform: scale(0.8);
+  }
+
+  80% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.suivre p{
+  font-family: 'Spongition', sans-serif;
+}
+
+.copyright p{
+  font-family: 'Spongition', sans-serif;
+}
+
+
+
+/*fin footer*/
